@@ -1,0 +1,319 @@
+/* Imports */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans&family=Montserrat&family=Quicksand&family=REM&display=swap');
+/* ------ */
+
+/*  -- body -- */
+* {
+  margin: 0;
+}
+/*  ----------- */
+
+/* -------------- Nav.jsx -------------- */
+.navbar {
+  background-color: #D54733;
+  height: 90px;
+  font-family: 'Montserrat', sans-serif;
+}
+.content{
+  display:grid;
+  column-gap:15px;
+  padding:10px;
+  justify-self:center;
+}
+.carousel-container {
+  width: 999px; 
+  padding: 20px;
+}
+.carousel{
+  border: solid 2px black; 
+}
+.NavImg{
+  justify-self:center;
+}
+/* ----------------------------- */
+
+/* Footer.jsx */
+.theFooter {
+  background-color: #cc3d48;
+  min-height: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h5 {
+  text-align: right;
+  margin-right: 15%;
+}
+.footerP {
+  margin-left: 15%;
+  color: white;
+}
+.footerP>a {
+  text-decoration: none;
+  color: white;
+}
+.quick, .socials, .contact {
+  padding: 20px;
+}
+.quick>h3, .socials>h3, .contact>h3 {
+  text-align: center;
+  color: white;
+}
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+svg.icon.icon-sm {
+  width: 32px;
+  padding: 3%;
+  filter: invert(1);
+}
+.copyright {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+.copyright>p {
+  margin-top: 16px;
+}
+/* ------------------ */
+
+/* HomePage.jsx */
+.aboutUs {
+  display: flex;
+  padding-bottom: 7vh;
+  padding-top: 7vh;
+  text-align: justify;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  min-height: 80vh;
+  background-image: url('/src/assets/bkgrnd.jpg');
+}
+.forUs {
+  width: 40%;
+  padding: 15px;
+}
+.purpose {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white ;
+  width: 40%;
+  padding: 15px;
+}
+.featured-title{
+  width:98%;
+  justify-self:center;
+  text-align:center;
+  border-top: 1px solid #000;
+  padding-top:10px;
+}
+.default{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+.posts-featured{
+  display:grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 3rem;
+  justify-items:center;
+  margin-bottom:25px;
+}
+.post-card{
+  display:grid;
+  grid-template-columns:15% 85%;
+  width:85vw;
+  text-align:left;
+}
+.post-img{
+  height:10rem;
+  padding:1rem;
+  border-radius:40px;
+}
+.btn{
+    background-color: #cc3d48;
+    border:1px solid #cc3d48;
+}
+/* ----------------------------- */
+
+/* CreatePage.jsx */
+.createContainer {
+  min-height: 80vh;
+}
+.posth1 {
+  font-family: 'REM', sans-serif;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+.titleBox, .descBox, .blogPost {
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 2vh;
+}
+.titleBox:focus, .blogPost:focus {
+  border: 3px solid #555;
+}
+.titleBox, .descBox {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.blogPost {
+  width: 80%;
+  resize: none;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.checkContainer {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+  width: fit-content;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.checkContainer>div {
+  width: fit-content;
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.option1 {background-color: #8BBD8B;}
+.option2 {background-color: #AF5D63;}
+.option3 {background-color: #F7DBA7;}
+.option4 {background-color: #FCF6BD;}
+.option5 {background-color: #987188;}
+.option6 {background-color: #97D8C4;}
+.option7 {background-color: #D4D2A5;}
+label {font-family: 'Montserrat', sans-serif;}
+.buttonContainer{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: fit-content;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+button {
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #ccc;
+}
+/* ----------------------------------------- */
+
+/* Register.jsx */
+.form{
+  height:85vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  background-image:url('/src/assets/pancake.jpg');
+  background-size:cover;
+  background-position-y:-10vh;
+}
+.form-title{
+  text-align:center;
+}
+.input-container{
+  background-color:antiquewhite;
+}
+.form-container{
+  width: 40vw;
+  align-self:center;
+  border:1px solid black;
+  border-radius:15px;
+  padding:25px;
+  background-color: rgba(253, 122, 113, 0.5);
+}
+.form-name{justify-content: space-between; }
+.form-info{nav-down:___;}
+.card-text{height:3em;}
+.form-label{margin-right:15px;}
+.form-control{align-self:flex-end;}
+.btn btn-primary{align-self:center;}
+/* ---------------------- */
+
+/* BlogSet.jsx */
+.BlogContent {
+  display:flex;
+  flex-direction:column;
+  margin-bottom:15px;
+}
+/* ----------------------- */
+
+/* SearchResults.jsx */
+.noMatch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+}
+.search-form{
+  display:flex;
+  flex-direction: row;
+}
+.Search-btn{
+  display:flex;
+  width:50px;
+  height:40px;
+  align-items:center;
+  text-align: center;
+  background-color:white;
+}
+.Search-btn:hover{
+  background-color: rgb(204, 200, 200);
+}
+/* ----------------------------------------- */
+
+/* ViewPost.jsx */
+.vb-img{
+  border:__;
+}
+.vb-title{
+  font-size:larger;
+}
+.vb-desc{
+  border:__;
+}
+.vb-tags{
+  background-color: #df606b;
+  width:fit-content;
+  height:fit-content;
+  border-radius:5px;
+  margin:5px;
+}
+.vb-tags-text{
+  padding-left:5px;
+  padding-right:5px;
+}
+.vb-recipe{
+  border:__;
+}
